@@ -28,7 +28,7 @@ jobs:
       - run: npm run build
 
       - name: 🧪 Run tests and count lines
-        run: npm test
+        run: npm test --coverage
 
       - name: 🎉 Send metrics to server
         run: node metrics.js
