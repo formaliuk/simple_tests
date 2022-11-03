@@ -3,7 +3,7 @@ name: Metrics
 on:
   workflow_dispatch:
   pull_request:
-    branches: [ master, develop ]
+    branches: master
 
 jobs:
   check:
@@ -20,12 +20,12 @@ jobs:
       - name: 💩 Setup node 18
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 14.17.1
 
       - name: 🤖 npm install
         run: npm install
 
-      - name: 🧪 Test lines
+      - name: 🧪 Run tests and count lines
         run: npm test
 
       - name: 🎉 Send metrics to server
