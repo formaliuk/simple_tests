@@ -20,7 +20,7 @@ jobs:
       - name: 💩 Setup node 18
         uses: actions/setup-node@v3
         with:
-          node-version: 14.17.1
+          node-version: 18
 
       - name: 🤖 npm install
         run: npm install
