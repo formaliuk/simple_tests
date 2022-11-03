@@ -15,6 +15,7 @@
   "description": "",
   "devDependencies": {
     "cloc": "^2.10.0",
+    "jest-cli": "^29.2.2",
     "node-fetch": "^3.2.10",
     "node-html-parser": "^6.1.1"
   }
